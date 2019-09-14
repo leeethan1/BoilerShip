@@ -1,0 +1,23 @@
+
+public class CountdownTimer : MonoBehaviour
+{
+	float currentTime = 0f;
+	float starting Time = 10f;
+
+	void Start()
+	{
+		currentTime = startingTime;
+	}
+
+	void Update()
+	{
+		currentTime -= 1 * Time.deltaTime;
+		print (currentTime);
+	}
+}
+
+
+
+============================================================================
+
+https://www.youtube.com/watch?v=o0j7PdU88a4
