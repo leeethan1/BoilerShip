@@ -24,9 +24,10 @@ public class Moving : MonoBehaviour
         velX = Input.GetAxisRaw("Horizontal");
         velY = rigBody.velocity.y;
         rigBody.velocity = new Vector2(velX * moveSpeed, velY);
-        if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space))  //makes player jump
+        if ((velY == 0) && (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space)))  //makes player jump
         {
-            GetComponent<Rigidbody2D>().AddForce(jumpHeight, ForceMode2D.Impulse);
+            rigBody.AddForce(jumpHeight, ForceMode2D.Impulse);
+
         }
     }
 
