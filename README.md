@@ -12,12 +12,14 @@ Starship Robot
 ### Goal: 
 Deliver to President Mitch Daniels before time runs out.
 
-### Power-Ups:
-  - Coca-Cola (Add Time)
-  - Den Pops (Boost)
-  - Hammer (Weapon)
-  - Purdue Logo (Star from Mario)
-  - Purdue Pete (Yoshi)
+<h3> Power-Ups: </h3>
+<ul>
+  <li> Coca-Cola (Add Time) </li>
+  <li> Den Pops (Boost) <font color="green"> Texture Done </font> </li>
+  <li> Hammer (Weapon) <font color="green"> Texture Done </font> </li>
+  <li> Purdue Logo (Star from Mario) <font color="green"> Texture Done </font> </li>
+  <li> Purdue Pete (Yoshi) </li>
+</ul>
   
 ### Tools:
   - Unity
