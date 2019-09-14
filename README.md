@@ -13,11 +13,11 @@ Starship Robot
 Deliver to President Mitch Daniels before time runs out.
 
 ### Power-Ups:
-  -> Coca-Cola (Add Time)
-  -> Den Pops (Boost)
-  -> Hammer (Weapon)
-  -> Purdue Logo (Star from Mario)
-  -> Purdue Pete (Yoshi)
+  - Coca-Cola (Add Time)
+  - Den Pops (Boost)
+  - Hammer (Weapon)
+  - Purdue Logo (Star from Mario)
+  - Purdue Pete (Yoshi)
   
 ### Tools:
   - Unity
