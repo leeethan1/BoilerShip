@@ -1,0 +1,9 @@
+
+-> Add a gameObject
+
+-> import texture from Sprites folder
+
+-> add PowerUpDenpop Script
+
+-> Add effect
+
