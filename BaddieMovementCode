@@ -1,0 +1,102 @@
+// enemy character that moves left and right on a platform without falling off
+
+using UnityEngine;
+using System.Collections;
+
+public class EnemyPatrol : MonoBehaviour
+{
+    Rigidbody2D enemyRigidBody2D;
+    public int UnitsToMove = 5;
+    public float EnemySpeed = 500;
+    public bool _isFacingRight;
+    private float _startPos;
+    private float _endPos;
+
+    public bool _moveRight = true;
+
+
+    // Use this for initialization
+    public void Awake()
+    {
+         enemyRigidBody2D = GetComponent<Rigidbody2D>();
+        _startPos = transform.position.x;
+        _endPos = _startPos + UnitsToMove;
+        _isFacingRight = transform.localScale.x > 0;
+    }
+
+
+// Update is called once per frame
+public void Update()
+{
+
+    if (_moveRight)
+    {
+        enemyRigidBody2D.AddForce(Vector2.right * EnemySpeed * Time.deltaTime);
+        if (!_isFacingRight)
+            Flip();
+    }
+    
+    if (enemyRigidBody2D.position.x <= _startPos)
+        _moveRight = true;
+
+
+}
+
+    public void Flip()
+    {
+        transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
+        _isFacingRight = transform.localScale.x > 0;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+//o move a specific distance left or right and then return to the origin and just to do the same thing.
+
+// Use this for initialization
+    void Start ()
+    {
+        initialPosition = transform.position;
+        direction = -1;
+        maxDist += transform.position.x;
+        minDist -= transform.position.x;
+    }
+   
+    // Update is called once per frame
+    void Update ()
+    {
+        switch (direction)
+        {
+             case -1:
+                // Moving Left
+                if( transform.position.x > minDist)
+                    {
+                       GetComponent <Rigidbody2D>().velocity = new Vector2(-movingSpeed,GetComponent<Rigidbody2D>().velocity.y);
+                    }
+                else
+                    {
+                       direction = 1;
+                    }
+                break;
+             case 1:
+                  //Moving Right
+                if(transform.position.x < maxDist)
+                    {
+                        GetComponent <Rigidbody2D>().velocity = new Vector2(movingSpeed,GetComponent<Rigidbody2D>().velocity.y);
+                    }
+                else
+                    {
+                        direction = -1;
+                    }
+            break;
+        }
+    }
+ 
+}
