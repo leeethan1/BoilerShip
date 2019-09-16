@@ -1,29 +1,31 @@
-# HelloWorld
-ez 1st place
+# HelloWorld Hackathon Project:
 
-### Game: 
-Boilership
+## Boilership
+Retro-inspired Unity platformer that contains many Purdue University culture references
 
--> Retro-themed platformer
+## Deployment
+Download the Boilership Game zip folder and unzip the folder in the directory of your choice. To run the game, double-click on the Boilership executable in the new folder. 
 
-### Character: 
-Starship Robot
+## Characters
+  - Starship Robot (Player)
+  - Mitch Daniels
+  - Enemies (IU Students, Frataternity Members)
 
-### Goal: 
-Deliver to President Mitch Daniels before time runs out.
-
-<h3> Power-Ups: </h3>
-<ul>
-  <li> Coca-Cola (Add Time) </li>
-  <li> Den Pops (Boost) <font color="green"> Texture Done </font> </li>
-  <li> Hammer (Weapon) <font color="green"> Texture Done </font> </li>
-  <li> Purdue Logo (Star from Mario) <font color="green"> Texture Done </font> </li>
-  <li> Purdue Pete (Yoshi) </li>
-</ul>
+## Goal 
+Deliver food to Purdue President Mitch Daniels while avoiding enemies
   
-### Tools:
-  - Unity
-  - Piskel
-  - React
-  - JavaScript
-  - Music Generating Software TBD
+## Developed With
+  - Unity (game engine)
+  - Piskel (creating sprites and animations)
+  - PixilArt (creating backgrounds)
+  
+## Future Plans
+We plan to add more levels (1 for each residence dorm), more enemies, more backstages, and more power-ups. We also want to add animations for every character do add more fluidity. We are considering publishing this game on Steam and maybe Android once we feel this is a completed project.
+ 
+## Contributors:
+  - Ethan Lee 
+  - Ian Loo
+  - Alan Bare
+  - Abhiram Saran
+  - Umang Sharma
+  
